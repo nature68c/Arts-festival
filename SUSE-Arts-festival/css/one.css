@@ -1,0 +1,176 @@
+* {
+    padding=0;
+    margin=0;
+}
+
+html,body{
+    height:100%;
+    margin:0;
+}
+
+.clearfix::after{
+    content:".";
+    display:block;
+    height:0;
+    visibility:hidden;
+    clear:both;
+ }
+
+ ul,li {
+  list-style: none
+}
+
+a {
+  text-decoration: none;
+}
+
+body{
+    display: flex;
+}
+#left{
+    min-width: 120px;
+    background-color: #1D2530;
+    height: auto;
+}
+#left ul{
+    padding: 20px;
+}
+#left ul li{
+    margin-top: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius:50%;
+    text-align: center;
+    line-height: 60px;
+}
+#left ul li:hover{
+    transition: 0.5s;
+    border-radius: 10%
+}
+
+#left ul li span{
+    display:block;
+}
+
+#left ul li:first-child{
+    background: rgb(0, 132, 255);
+    width:60px;
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+#left ul li:nth-child(2){
+    background:rgb(128, 10, 128);
+    width:60px;
+    height: 60px;
+}
+
+#left ul li:nth-child(3){
+        background:red;
+        width:60px;
+        height: 60px;
+}
+#left ul li:nth-child(4){
+    background:rgb(36, 128, 0);
+    width:60px;
+    height: 60px;
+}
+#left ul li:last-child{
+    background:rgb(168, 166, 166);
+    width:60px;
+    height: 60px;
+}
+#left ul li img{
+    position: relative;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+}
+#back{
+     position: fixed;
+     left: 30px;
+     bottom: 30px;
+     
+}
+
+#picture{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width:1400px;
+}
+#pic img{
+    width: 400px;
+}
+#pic{
+    width: 400px;
+    margin-bottom: 30px;
+    margin-left: 45px;
+    position: relative;
+    box-shadow: 1px 1px 21px 0px rgba(20, 20, 20, 0.1);
+	background-color: #b8b8b8;
+    border-radius: 2px;
+    overflow: hidden;
+}
+#pic #pic-1{
+    position: absolute;
+    top: 470px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 20, 20, 0.7);
+    transition: top 0.5s;
+    color: #fff;
+}
+#pic:hover #pic-1{
+    top: 0;
+}
+#pic-1 h4{
+    font-size: 22px;
+	font-weight: initial;
+    line-height: 32px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+#pic-1 p{
+    margin: 0;
+    font-size: 14px;
+	line-height: 28px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+    height: 90px;
+}
+.buttons{
+    width: 213px;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.in,.weibo,.share{
+    display: block;
+    width: 54px;
+    height: 54px;
+    background-repeat: no-repeat;
+
+}
+.in{
+    background-image: url("../images/进入.png")
+}
+.weibo{
+    background-image: url("../images/微博.png")
+}
+.share{
+    background-image: url("../images/分享.png")
+}
+
+#insert{
+    position: absolute;
+    left:23%;
+    top: 15%;
+}
